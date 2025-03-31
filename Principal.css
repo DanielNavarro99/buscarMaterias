@@ -1,0 +1,325 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Imagenes/FondoTec.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para el contenedor de la imagen del logo */
+div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el enlace de inicio de sesión */
+a {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilos para el encabezado */
+header h1 {
+    text-align: center;
+    color: #32129a;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de búsqueda */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+    flex-wrap: nowrap; /* Evita saltos de línea */
+}
+
+
+
+.margenVista input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5rem;
+    margin: 0;
+    width: auto; /* Ancho automático para adaptarse al contenedor */
+}
+
+.margenVista input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #32129a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0;
+    flex-shrink: 0; /* Evita que el botón se encoja */
+}
+
+section input[type="submit"]:hover {
+    background-color: grey;
+}
+
+/* Estilos para la tabla de materias y maestros */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #32129a;
+    color: white;
+}
+
+/* Estilos para la sección de paginación */
+section p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section svg {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+section svg:hover {
+    color: #007bff;
+}
+
+/* Estilos para la sección de agregar profesor */
+.margenVista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.margenVista h2 {
+    text-align: center;
+    color: #32129a;
+    margin-bottom: 20px;
+}
+
+.margenVista label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.margenVista input[type="text"],
+.margenVista input[type="file"],
+.margenVista select {
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.margenVista input[type="submit"] {
+    background-color: #32129a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.margenVista input[type="submit"]:hover {
+    background-color: #ec5a68;
+}
+
+/* Fondo morado para los botones */
+.fondomorado {
+    padding: 1px;
+    background-color: #32129a;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: white;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barrarosa {
+    background-color: #ec5a68;
+    padding: 0.3rem;
+}
+
+.colornegro {
+    background-color: #39383b;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+/* Estilos para el modal de confirmación */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+#btnConfirm, #btnCancel {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnConfirm {
+    background-color: #32129a;
+    color: white;
+}
+
+#btnConfirm:hover {
+    background-color: #ec5a68;
+}
+
+#btnCancel {
+    background-color: #ccc;
+    color: #333;
+}
+
+#btnCancel:hover {
+    background-color: #aaa;
+}
+
+/* Estilos para el Modal de Éxito */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-success {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-success:hover,
+.close-success:focus {
+    color: black;
+}
+
+#btnSuccessOk {
+    padding: 10px 20px;
+    background-color: #32129a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#btnSuccessOk:hover {
+    background-color: #ec5a68;
+}
+
+/* Ajuste final para la barra de búsqueda */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+/* Estilos para la sección de búsqueda */
+.buscador form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.buscador input[type="text"] {
+    padding: 10px;
+    width: 20rem;
+    border: 1px solid #ccc;
+    border-radius: 5rem;
+}
+
+.buscador input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #32129a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.buscador input[type="submit"]:hover {
+    background-color: grey;
+}
